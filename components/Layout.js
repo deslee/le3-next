@@ -25,7 +25,7 @@ class Layout extends React.Component {
     render() {
         const {
             children,
-            title = 'Hello world'
+            title = 'Site Title'
         } = this.props;
 
         return (
