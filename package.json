@@ -5,8 +5,7 @@
   "main": "next.config.js",
   "scripts": {
     "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "deploy-static": "next build && next export"
   },
   "author": "",
   "license": "ISC",
