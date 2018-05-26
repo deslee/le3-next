@@ -4,10 +4,13 @@ import Header from './header/Header';
 import Footer from './footer/Footer';
 
 export const GlobalStyles = () => <div>
-    <Head>
+    <Head> 
         <meta charSet='utf-8' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+        <link rel="stylesheet"
+              href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     </Head>
     <style global jsx>{`
         html, body {
@@ -22,7 +25,7 @@ export const GlobalStyles = () => <div>
 </div>
 
 class Layout extends React.Component {
-    render() {
+    render() { 
         const {
             children,
             title = 'Site Title'
